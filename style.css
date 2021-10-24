@@ -1,0 +1,113 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    background: #f4f4f4;
+    color: #3c4242;
+}
+
+button:focus-visible, input:focus-visible, optgroup:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 0px;
+}
+
+.header {
+    position: sticky;
+    top: 0px;
+    background-color: #ffff;
+    padding: 16px 32px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.16);
+    z-index: 9;
+}
+
+.header .logo {
+    height: 32px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+.header .search-reset-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header .search-reset-btn .select-option {
+    border: solid 1px #d9d9d9;
+    background-color: rgba(217, 217, 217, 0.4);
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: #262626;
+    font-size: 14px;
+    height: fit-content;
+}
+
+.header .search-reset-btn .reset-btn {
+    cursor: pointer;
+    margin-left: 16px;
+    padding: 8px 24px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.header .option-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header .option-list label:first-child {
+    margin-right: 16px;
+}
+
+.body {
+    margin: 16px 32px;
+}
+
+.body .card-view {
+    border-radius: 4px;
+    background: #fff;
+    height: 100%;
+}
+
+.body .card-view .network-view {
+    padding: 18px;
+}
+
+.body .card-view .empty-state {
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    font-size: 24px;
+}
+
+.body .card-view .product-view {
+    height: 450px;
+    padding: 18px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.body .card-view .product-view::-webkit-scrollbar {
+    display: none;
+}
+
+.body .card-view .product-view .row {
+    margin-top: 8px;
+}
+
+.body .card-view .product-view .row div:first-child {
+    font-weight: 500;
+}
+
+.body .card-view .product-view .row div:last-child {
+    display: flex;
+    align-items: center;
+}
